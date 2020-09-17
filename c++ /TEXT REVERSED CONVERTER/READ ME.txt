@@ -1,0 +1,25 @@
+the following program was made to run on linux 
+
+the goal of this project was simply to make a fucntion that converts sentences into a revesed text sentence
+
+the first challenge was to  make it into a terminal user friendly instead of going straight forward into 
+typing random text, 
+
+the second challenge was to limit the program to acept input only from text and spaces 
+
+i fixed it by using the size standar fucntion a boolean and a loop 
+
+in order to prevent the user from typing anything else but letters and  spaces 
+
+the third challenge was with the user input. 
+
+i struggled to used regular input and i had to rely on gecth fucntion.
+
+since gecth is not present on the linux enviroment  i pulled a reference fucntion 
+that recreates the gecth function on linux.
+
+so everything turned good in the end,
+
+the limit input was only ment to expand further the program, and it's not really nescesary, 
+
+this is why i comented it. 

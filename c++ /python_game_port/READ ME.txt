@@ -1,0 +1,12 @@
+this program is meant to replicate my final project game in python
+
+since i used the SFML library i had to use different aproaches 
+
+and i could've save myself some coding with arrays and sprites from the SFML library.
+
+the goal was to demonstrate that i could port my python game into c++.
+and using a single class instead of hereting from 3 different classes,
+since i had some issues with the original constructor, 
+
+
+

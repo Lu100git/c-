@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1594221517 source:/home/lu/codeblocks/Tower of heavens/main.cpp
+	<SFML/Graphics.hpp>
+	<iostream>
+	<stdio.h>
+
+1594221517 source:/home/lu/PORTFOLIO/c++ /Tower of heavens/main.cpp
+	<SFML/Graphics.hpp>
+	<iostream>
+	<stdio.h>
+

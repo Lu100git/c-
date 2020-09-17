@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1596587977 source:/home/lu/codeblocks/python_game_port/main.cpp
+	<SFML/Graphics.hpp>
+	<iostream>
+	<stdio.h>
+

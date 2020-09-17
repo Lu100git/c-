@@ -1,0 +1,87 @@
+THE FOLLOWING GAME WAS CREATED USING THE SFML GRAPHICS LIBRARY,
+AND CODE BLOCKS ON LINUX ENVIROMENT
+
+I would like to clarify that not all the code is mine
+
+for the rain class and animation class i used a reference code 
+i found on youtube,
+
+CODE FOR THE RAIN:
+https://www.youtube.com/watch?v=-FSvK81AdE8
+
+CODE FOR ANIMATION:
+
+https://www.youtube.com/watch?v=kAZVbPF6N4Q&t=384s
+
+
+
+the rest of the code was writen by me. 
+
+also i used art from the following website
+
+opengameart.org
+
+special thanks to
+#######################################
+#   author of the main player sprite: #
+#                                     #
+#   irmirx                            #
+#                                     #
+#   author of the plataforms:         #
+#                                     #
+#   Zack Alvarado                     #
+#                                     #
+#######################################
+
+
+the backgorunds tiled floor, spikes, 
+skull and hears was done by me.
+
+feel free to use them.
+
+CONTROLS:
+
+left and right arrows for movement
+
+spacebar to jump
+
+esc key to quit the game.
+
+
+
+CONCLUSION:
+
+the porpuse of this project was to demonsrate the use of c++
+by making a game. 
+
+i decided to use the sfml library in order to build the game faster
+rather than using the console graphics.
+
+i demonstrate how you can use arrays and loops in order to save some code typing.
+even tho i didn't use more for loops to fix some arrays but time was getting short.
+
+originally i was gonna use seperate header files and cpp files so it would look cleaner and short.
+
+but i had to discard the idea because i created an imaginary deadline in order to challenge myself 
+into simulating a real time release date. 
+
+i also had to cut cornesrs with a few global variables, and just leaving on the 
+same directory. so the porgram will run sucessfully as long as everything it's left alone
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
