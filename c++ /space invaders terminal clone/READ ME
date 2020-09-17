@@ -1,0 +1,15 @@
+this project was just a simple game to demonstrate the usage of the console graphics,using c++
+
+it was focus manly on simplicity and performance 
+
+i skiped classes since the usage of gotoxy missplaces it glitches the colors 
+and the characters as well,
+
+also increasing the speed on the enemies causes glitches, and also the bullet increas speed
+has collition detection issues, due to the limitation of the terminal, i can see this game can improve,
+
+but i didn't wanted to make the code bigger and more complex in order to provide examples on how 
+simple graphics can be added to a c++ program without graphic libraries,
+
+also, i excluded the ncurses library in order to make this code run almost anywere 
+without installing more libraries.
