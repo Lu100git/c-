@@ -10,7 +10,7 @@
 
 //defining  number values as colors
 #define BLACK 30
-#define RED 3166
+#define RED 31
 #define GREEN 32
 #define YELLOW 33
 #define BLUE 34
@@ -135,14 +135,14 @@ void bullet(int x, int y)
 {
 		gotoxy(x,y);
 		txtbgcolor(RED);
-		printf("%s","v");
+		printf("%s"," ");
 }
 
 void player_bullet(int x, int y)
 {
 		gotoxy(x,y);
 		txtbgcolor(RED);
-		printf("%s","|");
+		printf("%s"," ");
 }
 
 
@@ -173,14 +173,14 @@ int main()
 	int key;
 	int PLAYER_BULLET_X;
 	int PLAYER_BULLET_Y = 47;
-	int PLAYER_BULLET_SPEED = 5;
+	int PLAYER_BULLET_SPEED = 4;
 
 	int ENEMY_X_POS = 3;
 	int ENEMY_Y_POS = 2;
 	int speed =1;
 
 	//bullet starts at 8, then it follows enemy y pos
-	int bullet_speed = 6;
+	int bullet_speed = 2;
 	int BULLET_X = rand()%76;
 	int BULLET_Y = 8;
 
@@ -275,6 +275,7 @@ int main()
 			if(PLAYER_SHOOTING)
 			{
 				player_bullet(PLAYER_BULLET_X, PLAYER_BULLET_Y);
+
 				PLAYER_BULLET_Y -= PLAYER_BULLET_SPEED;
 
 				if(PLAYER_BULLET_Y <= 2)
@@ -396,14 +397,14 @@ int main()
 		}
 
 
-		//ALLOWING TO SHOT ENEMIES, PER ROW
+		//ALLOWING TO SHOT ENEMIES, PER ROW, we begin with a not true statement, because of lazyness
 		if(!ALLOW_SHOOT_2)
 		{
 		
 			for (int i = 0; i < 24; ++i)
 			{
 			
-				if( (PLAYER_BULLET_Y <= ENEMY_Y_POS + 3) & (PLAYER_BULLET_X == ENEMY_X_POS + i))
+				if( (PLAYER_BULLET_Y <= ENEMY_Y_POS + 3) & (PLAYER_BULLET_X == ENEMY_X_POS + i) )
 				{
 					if(ENEMIES3[i] == '0')
 					{
@@ -421,7 +422,7 @@ int main()
 			for (int i = 0; i < 24; ++i)
 			{
 			
-				if( (PLAYER_BULLET_Y <= ENEMY_Y_POS + 3) & (PLAYER_BULLET_X == ENEMY_X_POS + i))
+				if( (PLAYER_BULLET_Y <= ENEMY_Y_POS + 2) & (PLAYER_BULLET_X == ENEMY_X_POS + i) )
 				{
 					if(ENEMIES2[i] == 'W')
 					{
@@ -438,7 +439,7 @@ int main()
 			for (int i = 0; i < 24; ++i)
 			{
 			
-				if( (PLAYER_BULLET_Y <= ENEMY_Y_POS ) & (PLAYER_BULLET_X == ENEMY_X_POS + i))
+				if( (PLAYER_BULLET_Y <= ENEMY_Y_POS ) & (PLAYER_BULLET_X == ENEMY_X_POS + i) )
 				{
 					if(ENEMIES[i] == 'X')
 					{
@@ -479,7 +480,7 @@ int main()
 			return 0;	
 		}
 
-		//zero liives game over
+		//zero lives game over
 		if (LIVES == 0)
 		{
 			clear();
@@ -489,9 +490,13 @@ int main()
 		}
 
 		//RENDER AND CLEARING FRAMES
-		//printf("\e[?25l");
-		system("sleep 0.0864s");
+
+		//620  and 596 best performance
+		system("sleep 0.0596s");
 		clear();
+
+
+
 	}
 	//resets the terminal bacground to original colors
 	background_color(BLACK);
